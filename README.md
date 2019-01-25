@@ -2,15 +2,15 @@
 
 集中收集了一些强化学习中的问题与回答，可能部分回答有我自己的理解错误，希望大家发现问题的话可以多提issue。
 
-1. 为什么强化学习中Q-value-iteration要把sum操作变成expectation操作？
+#### 为什么强化学习中Q-value-iteration要把sum操作变成expectation操作？
 
 
-2. deterministic和stochastic的区别？
+#### deterministic和stochastic的区别？
 
 policy:
 
 - deterministic policy is mapping from state to action.
-- stochastic policy is mapping from state to *distribution over* action.
+- stochastic policy is mapping from state to `distribution over` action.
 
 environment:
 
@@ -18,7 +18,7 @@ environment:
 - deterministic的environment是给定s和a的情况下转移概率是确定的。
 
 
-3. 为什么要有discount factor？
+#### 为什么要有discount factor？
 
 1) 表示对未来reward的关注程度。gamma越小，代表未来reward所占比重更小，即越不重要，更看重眼前利益。
 
