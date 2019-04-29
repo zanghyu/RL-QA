@@ -84,8 +84,17 @@ value-function每次都需要把所有value值算一遍，而q-function不需要
 - 不用现在的参数计算target，而是用更新一定轮数(一般1e4到1e5左右，根据实验而定）之后的参数去计算target
 
 
-#### 16.
+#### 16.policy iteration和value iteration有什么区别
 
+https://www.quora.com/How-is-policy-iteration-different-from-value-iteration
+
+- Value iteration is simpler but its computationally heavy.
+
+- Policy iteration is complicated but its computationally cheap w.r.t value iteration.
+
+- Value iteration includes: finding optimal value function + one policy extraction. There is no repeat of the two because once the value function is optimal, then the policy out of it should also be optimal (i.e. converged).
+
+- Policy iteration includes: policy evaluation + policy improvement, and the two are repeated iteratively until policy converges.
 
 #### 17. 
 
